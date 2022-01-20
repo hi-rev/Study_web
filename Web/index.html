@@ -3,14 +3,20 @@
   <title>2022 NEW ROSTER</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colors.js"></script>
 </head>
 <body>
-  <h1>2022 로스터</h1>
+  <h1><a href="index.html">2022 로스터</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+
   <div id="grid">
   <ol> <!--Ordered List-->
-    <li><a href="Geng.html" class="saw" id="active">GEN G</a></li> <!--id값은 중복되면 안됨-->
-    <li><a href="T1.html" class="saw">T1</a></li>
-    <li><a href="DwgKia.html" class="saw">DWG KIA</a></li>
+    <li><a href="Geng.html">GEN G</a></li> <!--id값은 중복되면 안됨-->
+    <li><a href="T1.html">T1</a></li>
+    <li><a href="DwgKia.html">DWG KIA</a></li>
     <li><a href="KT.html">KT</a></li>
     <li><a href="Sandbox.html">Liiv SANDBOX</a></li>
     <li><a href="DRX.html">DRX</a></li>

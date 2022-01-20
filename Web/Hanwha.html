@@ -3,9 +3,14 @@
   <title>Hanwha 2022 NEW ROSTER</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colors.js"></script>
 </head>
 <body>
   <h1>2022 LCK 로스터</h1>
+  <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
   <div id="grid">
     <ol> <!--Ordered List-->
       <li><a href="Geng.html" id="active">GEN G</a></li> <!--id값은 중복되면 안됨-->
