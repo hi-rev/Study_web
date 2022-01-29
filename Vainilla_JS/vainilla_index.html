@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="vainilla_style.css">
+    <title>Momentum App</title>
+</head>
+<body>
+<!--input의 유효성 검사를 작동시키기 위해서는 form태그 안에서 사용-->
+<form class="hidden" id="login-form">
+<!-- placeholder 옵션은 input 창에 입력전 미리 띄워주는 내용이다.-->
+ <input required maxlength="15" type="text" placeholder="What is your name?"/>
+ <input type="submit" value="Log In"/>
+</form>
+ <h1 id="greeting" class="hidden"></h1>
+ <script src="vainilla_app.js"></script>
+</body>
+</html>
