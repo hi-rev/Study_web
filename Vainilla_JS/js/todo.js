@@ -7,7 +7,6 @@ const TODOS_KEY = "todos";
 let toDos = []; // 투두 리스트 배열 생성
 
 function saveToDos() { // 투두의 내용을 localStorage 에 넣음(영구저장)
-
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
 
@@ -22,6 +21,7 @@ function handleToDoSubmit(e) { // value 제출할 때 동작
     e.preventDefault();
     const newTodo = toDoInput.value;
     toDoInput.value = "";
+
     const newTodoObj = { // text, id를 함께 저장(삭제기능구현을 위함)
         text: newTodo,
         id: Date.now()
